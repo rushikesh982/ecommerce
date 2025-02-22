@@ -1,0 +1,39 @@
+/* sldier */
+
+
+.slider {
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    will-change: transform;
+}
+
+.slider-image {
+    flex-shrink: 0;
+    width: calc(100% / 4 - 8px); /* Default: 4 images per row with some spacing */
+    margin: 0 5px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Medium screens (2 images) */
+@media (max-width: 900px) {
+    .slider-image {
+        width: calc(100% / 2 - 8px);
+    }
+}
+
+/* Small screens (1 image) */
+@media (max-width: 600px) {
+    .slider-image {
+        width: 100%;
+        margin: 0;
+    }
+}
