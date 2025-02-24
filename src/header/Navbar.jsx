@@ -54,9 +54,9 @@ export default function Navbar()
                                     </bdi>
                                 </li>
                                 <li>
-                                    <i class="ri-shopping-cart-line"></i>
+                                    <i className="ri-shopping-cart-line"></i>
                                 </li>
-                                <li><i class="ri-user-3-line"></i></li>
+                                <li><i className="ri-user-3-line"></i></li>
                             </ul>
                             <ul className="d-block d-lg-none">
                             <li>
@@ -65,10 +65,10 @@ export default function Navbar()
                                     </bdi>
                                 </li>
                                 <li>
-                                    <i class="ri-shopping-cart-line"></i>
+                                    <i className="ri-shopping-cart-line"></i>
                                 </li>
-                                <li><i class="ri-user-3-line"></i></li>
-                                <li><i class="ri-menu-line"></i></li>
+                                <li><i className="ri-user-3-line"></i></li>
+                                <li><i className="ri-menu-line"></i></li>
                             </ul>
                         </div>
                     </div>
@@ -83,6 +83,10 @@ export default function Navbar()
                 </div>
                 <div className="mob-nav d-lg-none"></div>
             </div>
+            <div className="customize-box">
+                <h5>Brandstore</h5><i className="ri-close-line close"></i>
+            </div>
+            <button className="change"><i className="ri-palette-fill"></i>customize</button>
         </>
     )
 }
